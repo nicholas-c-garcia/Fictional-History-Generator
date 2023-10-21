@@ -1,0 +1,234 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Overall Organization */
+#page{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Header CSS */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  border-top: 5px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#header-title {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 5vh;
+}
+
+.addObituary{
+  font-family: inherit;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 10vh;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.addObituary:first-child{
+  margin-left: auto;
+  visibility: hidden;
+}
+
+.addObituary:last-child{
+  margin-left: auto;
+  background-color: inherit;
+  border: 0;
+}
+
+.addObituary:hover{
+  font-family: inherit;
+  background-color: gray;
+  cursor: pointer;
+}
+
+/* Show Obituaries */
+#obituaries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100vw;
+  flex: 1 1 auto;
+  height: 89vh;
+  overflow-y: auto;
+}
+
+#obit-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+  height: fit-content;
+  width: 225px;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+#obit-Card:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+  height: fit-content;
+  width: 225px;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  cursor: pointer;
+}
+
+#obit-pic {
+  border-radius: 20px;
+}
+
+#obit-text-element {
+  margin: 10px;
+  text-align: center;
+}
+
+#voice-button {
+  border-radius: 50%;
+  background-color: darkgray;
+  width: 40px;
+  height: 40px;
+}
+
+#voice-button:hover {
+  border-radius: 50%;
+  background-color: gray;
+  width: 40px;
+  height: 40px;
+}
+
+#pull-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin-bottom: 5px;
+  width: 15vw;
+}
+
+/* Add Obituary */
+
+#empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  color: darkgray;
+  
+}
+
+#create-obituary {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255, 0.9);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+
+#overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exit-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  color: gray;
+  font-size: 8vh;
+
+}
+
+.exit-overlay:hover {
+  cursor: pointer;
+  color: black;
+}
+
+#overlay-upload {
+  visibility: hidden;
+}
+
+#overlay-upload-text {
+  margin-top: 5vh;
+  font-family: inherit;
+}
+
+#overlay-upload-text:hover {
+  font-family: inherit;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+#overlay-text {
+  width: 30vw;
+  height: 5vh;
+  margin-bottom: 5vh;
+}
+
+#overlay-image {
+  height: 20vh;
+  width: 20vw;
+}
+
+#overlay-date-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+#overlay-date1 {
+  margin-bottom: 5vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+#overlay-date2 {
+  margin-bottom: 5vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
